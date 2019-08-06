@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <!-- 1.添加页面需求的元素
+         2.编写元素的布局和样式
+         3.优化代码，微调样式 -->
+    <!-- 导航条 -->
+    <div id="nav">
+        <div class="box">
+            <!-- 标题元素 -->
+            <div class="title">
+                <h3>个人博客</h3>
+            </div>
+            <!-- 列表 -->
+            <div class='list'>
+                <ul>
+                    <li><a href="index.html">网站首页</a></li>
+                    <li class="focus">文档列表</li>
+                    <li><a href="mypic.html">我的相册</a> </li>
+                    <li>时间轴</li>
+                    <li>留言</li>
+                    <li>关于我们</li>
+                    <li>发表博客</li>
+                </ul>
+            </div>
+            <!-- 导航链接 -->
+            <div class="a1">
+                <a href="login.html">登录</a>
+                <a href="#">注册</a>
+            </div>
+        </div>
+    </div>
+    <div id="list">
+        <!-- 添加顶部元素 -->
+        <div class="top">
+            <div class="topleft">
+                <h3>文章列表</h3>
+            </div>
+            <div class="topright">
+                <p>不要轻易放弃,学习成长的路上,我们长路漫漫,只因学无止境。</p>
+            </div>
+        </div>
+        <!-- 添加主体元素 -->
+        <div class="body">
+            <!-- 列表部分 -->
+            <div class="lit">
+                <!-- 列表项 -->
+                <div class="item">
+                    <!-- 标题 -->
+                    <div class="title">
+                        <h3>Python语音在人工智能的优势</h3>
+                    </div>
+                    <!-- 内容 -->
+                    <div class="con">
+                        <!--左侧图片  -->
+                        <div class="cleft">
+                            <img src="imgs/toppic01.jpg" alt="">
+                        </div>
+                        <!-- 右侧说明文字 -->
+                        <div class="cright">
+                            <p class="ptop">
+                                本文探讨了Python语言在AI领域的优势与运用，谁会成为AI和大数据时代第一开发语言？
+                                这本已是一个不要争论的问题，如果说三年前，matiab、scale、R、Java……
+                            </p>
+                            <p class="pbottom">
+                                sdfsadsfsd
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 广告推荐 -->
+            <div class="ad">
+                <div class="adtip">
+                    <h3>特别推荐</h3>
+                    <div class="line">
+                        &nbsp;
+                    </div>
+                </div>
+                
+                <div class="imglist">
+                    <ul>
+                        <li>
+                            <img src="imgs/banner03.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="imgs/b04.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 导入业务逻辑文件 -->
+    <script src="js/blog.js"></script>
+</body>
+</html>
