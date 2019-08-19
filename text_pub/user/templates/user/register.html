@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 使用link元素导入样式文件 -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <!-- 导入jq框架用于代码的开发 -->
+    <script src='{% static "js/jquery.min.js"%}'></script>
+</head>
+<body>
+    <!-- 根据ui效果添加样式 -->
+    <div id="login">
+        <img src="{% static 'imgs/banner03.jpg'%}" alt="">
+    </div>
+    <!-- 新建一个外围最大的div元素 -->
+    <div id="log">
+        <!-- 将所有元素和数据添加到div中 -->
+        <form action="/user/register" method="post">
+            <div class="title">
+                <h3>注册用户</h3>
+            </div>
+            <div class="tip">
+                注册_register:
+            </div>
+            <div class="item">
+               <span class="opt">用户名:</span> <input type="text" placeholder="Username" name="username" id="username"> <span style="color:red">{{err1}}</span>
+            </div>
+            <div class="error" id="err1">Username not Null and lengh more than 6</div>
+            <div class='item'>
+                <span class="opt">密码:</span> <input type="password" name="password1" id="password1" placeholder="Password">   字母数字_组成
+            </div>
+            <div class="error" id='err2'>Password not Null</div>
+            <div class='item'>
+                <span class="opt">确认密码:</span> <input type="password" name="password2" id="password2" placeholder="Password">   字母数字_组成
+            </div>
+            <div class="error" id='err3'>Password not Null</div>
+            <div class="error" id='err4'>The Passwords are different</div>
+            <div class='btn'>
+                <input type="submit" value="_提交_">
+            </div>
+            
+        </form>  
+    </div>
+    <!-- 导入页面罗杰代码，必须首先导入jq框架 -->
+    <script src='{% static "js/blog.js"%}'></script>
+</body>
+</html>
